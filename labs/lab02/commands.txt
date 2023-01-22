@@ -1,0 +1,64 @@
+vocstartsoft:~/environment $ mkdir osweb osweb/testing osweb/labs osweb/labs/lab02 osweb/projects
+vocstartsoft:~/environment $ cd osweb
+vocstartsoft:~/environment/osweb $ ls -l
+total 0
+drwxrwxr-x 3 ec2-user ec2-user 19 May 25 23:28 labs
+drwxrwxr-x 2 ec2-user ec2-user  6 May 25 23:28 projects
+drwxrwxr-x 2 ec2-user ec2-user  6 May 25 23:28 testing
+vocstartsoft:~/environment/osweb $ cd testing
+vocstartsoft:~/environment/osweb/testing $ echo "sample text file" > sampleText1.txt
+vocstartsoft:~/environment/osweb/testing $ cd ..
+vocstartsoft:~/environment/osweb $ echo "sample text file 2" > sampleText2.txt
+vocstartsoft:~/environment/osweb $ cd ..
+vocstartsoft:~/environment $ cp commandlinebasics/Exercise\ Files/poems.txt  osweb/
+vocstartsoft:~/environment $ cd osweb
+vocstartsoft:~/environment/osweb $ ls -l
+total 8
+drwxrwxr-x 3 ec2-user ec2-user   19 May 25 23:28 labs
+-rw-rw-r-- 1 ec2-user ec2-user 1474 May 25 23:45 poems.txt
+drwxrwxr-x 2 ec2-user ec2-user    6 May 25 23:28 projects
+-rw-rw-r-- 1 ec2-user ec2-user   19 May 25 23:39 sampleText2.txt
+drwxrwxr-x 2 ec2-user ec2-user   29 May 25 23:39 testing
+vocstartsoft:~/environment/osweb $ head -n20  poems.txt | cat -n                                                                                                                                                                                  
+     1  Percy Shelley
+     2
+     3  Ozymandias
+     4
+     5  I met a traveller from an antique land
+     6  Who said: Two vast and trunkless legs of stone
+     7  Stand in the desert. Near them on the sand,
+     8  Half sunk, a shatter'd visage lies, whose frown
+     9  And wrinkled lip and sneer of cold command
+    10  Tell that its sculptor well those passions read
+    11  Which yet survive, stamp'd on these lifeless things,
+    12  The hand that mock'd them and the heart that fed.
+    13  And on the pedestal these words appear:
+    14  "My name is Ozymandias, king of kings:
+    15  Look on my works, ye Mighty, and despair!"
+    16  Nothing beside remains: round the decay
+    17  Of that colossal wreck, boundless and bare,
+    18  The lone and level sands stretch far away. 
+    19
+    20  ~ ~ ~ 
+vocstartsoft:~/environment/osweb $ cat sampleText2.txt
+sample text file 2
+vocstartsoft:~/environment/osweb $ rm poems.txt
+vocstartsoft:~/environment/osweb $ ls -l
+total 4
+drwxrwxr-x 3 ec2-user ec2-user 19 May 25 23:28 labs
+drwxrwxr-x 2 ec2-user ec2-user  6 May 25 23:28 projects
+-rw-rw-r-- 1 ec2-user ec2-user 19 May 25 23:39 sampleText2.txt
+drwxrwxr-x 2 ec2-user ec2-user 29 May 25 23:39 testing
+vocstartsoft:~/environment/osweb $ cd ..
+vocstartsoft:~/environment $ mv osweb aav5195osweb
+vocstartsoft:~/environment $ rm -R commandlinebasics/
+rm: remove write-protected regular file ‘commandlinebasics/.git/objects/pack/pack-28e3050eed0c674ab2ffb5f3bb7df988c20365d9.pack’? y
+rm: remove write-protected regular file ‘commandlinebasics/.git/objects/pack/pack-28e3050eed0c674ab2ffb5f3bb7df988c20365d9.idx’? y
+vocstartsoft:~/environment $ ls -l
+total 4
+drwxrwxr-x 5 ec2-user ec2-user  72 May 25 23:50 aav5195osweb
+-rw-r--r-- 1 ec2-user ec2-user 569 Apr 30 00:45 README.md
+vocstartsoft:~/environment $ cd aav5195osweb/labs/lab02
+vocstartsoft:~/environment/aav5195osweb/labs/lab02 $ lab02.txt
+vocstartsoft:~/environment/aav5195osweb/labs/lab02 $ touch lab02.txt
+vocstartsoft:~/environment/aav5195osweb/labs/lab02 $ 
